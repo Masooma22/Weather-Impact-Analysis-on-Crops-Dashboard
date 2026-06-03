@@ -1,2 +1,26 @@
-# Log files — do not commit
-*.log
+# NEVER commit real credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+*.pkl
+
+# ML (only keep .joblib)
+ml/artifacts/model.pkl
+
+# Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Duplicate/leftover
+Backend/.htaccess.txt
+ml/requirements.txt.txt
+dataset/
